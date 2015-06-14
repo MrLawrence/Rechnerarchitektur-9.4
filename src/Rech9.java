@@ -1,7 +1,7 @@
 import java.util.Random;
 
 /**
- * Created by kevin on 14.06.15.
+ * Created by Funke/Stachova on 14.06.15.
  */
 public class Rech9 {
     public static void main(String... args) {
@@ -14,9 +14,28 @@ public class Rech9 {
                     byte[] randomByteArray = new byte[1];
                     rand.nextBytes(randomByteArray);
                     array[i][k][l] = randomByteArray[0];
-                    System.out.println(array[i][k][l]);
                 }
             }
         }
+        int amount = 10;
+        Thread[] threads = new Thread[amount];
+        for (int i = 0; i < amount; i++) {
+            threads[i] = new Thread() {
+                public void run() {
+                    System.out.println("bla");
+                }
+            };
+        }
+        long startTime = System.currentTimeMillis();
+        for(Thread t : threads) {
+            t.start();
+            try {
+                t.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        long endTime = System.currentTimeMillis();
+        System.out.println(endTime - startTime);
     }
 }
