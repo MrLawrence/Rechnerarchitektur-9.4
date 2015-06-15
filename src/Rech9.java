@@ -49,6 +49,6 @@ public class Rech9 {
             }
         }
         long endTime = System.currentTimeMillis();
-        System.out.println(endTime - startTime);
+        System.out.println("Time:" + (endTime - startTime));
     }
 }
