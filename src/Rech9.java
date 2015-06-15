@@ -10,24 +10,37 @@ public class Rech9 {
 
         for (int i = 0; i < 500; i++) {
             for (int k = 0; k < 1024; k++) {
+                byte[] randomByteArray = new byte[1024];
+                rand.nextBytes(randomByteArray);
                 for (int l = 0; l < 1024; l++) {
-                    byte[] randomByteArray = new byte[1];
-                    rand.nextBytes(randomByteArray);
-                    array[i][k][l] = randomByteArray[0];
+                    array[i][k][l] = randomByteArray[l];
                 }
             }
         }
-        int amount = 10;
+        final int amount = 10;
+        final int rows = 500 / amount;
+
         Thread[] threads = new Thread[amount];
         for (int i = 0; i < amount; i++) {
+            int part = i * rows;
+
             threads[i] = new Thread() {
                 public void run() {
-                    System.out.println("bla");
+                    int mean = 0;
+                    for (int m = part; m < part + rows; m++) {
+                        for (int k = 0; k < 4; k++) {
+                            for (int l = 0; l < 4; l++) {
+                                //System.out.println(part+ "part   " + mean + " <mean  arrayfield> " + array[m][k][l]);
+                                mean += array[m][k][l];
+                            }
+                        }
+                    }
+                    System.out.println(mean);
                 }
             };
         }
         long startTime = System.currentTimeMillis();
-        for(Thread t : threads) {
+        for (Thread t : threads) {
             t.start();
             try {
                 t.join();
