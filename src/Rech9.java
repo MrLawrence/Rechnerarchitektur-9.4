@@ -17,7 +17,18 @@ public class Rech9 {
                 }
             }
         }
-        final int amount = 10;
+        doIt(1, array);
+        doIt(2, array);
+        doIt(30, array);
+        doIt(40, array);
+        doIt(50, array);
+        doIt(100, array);
+        doIt(200, array);
+        doIt(300, array);
+
+    }
+
+    public static void doIt(int amount, byte[][][] array) {
         final int rows = 500 / amount;
 
         Thread[] threads = new Thread[amount];
@@ -35,7 +46,7 @@ public class Rech9 {
                             }
                         }
                     }
-                    System.out.println(mean);
+                    //System.out.println(mean);
                 }
             };
         }
@@ -49,6 +60,6 @@ public class Rech9 {
             }
         }
         long endTime = System.currentTimeMillis();
-        System.out.println("Time:" + (endTime - startTime));
+        System.out.println("Time (N=" + amount + "):" + (endTime - startTime));
     }
 }

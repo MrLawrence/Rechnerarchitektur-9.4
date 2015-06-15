@@ -26,8 +26,8 @@
       <file leaf-file-name="Rech9.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Rech9.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2529411">
-              <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.7941176">
+              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -489,16 +489,16 @@
       <updated>1434299604923</updated>
       <workItem from="1434299608003" duration="663000" />
       <workItem from="1434311744052" duration="2960000" />
-      <workItem from="1434357424524" duration="4674000" />
+      <workItem from="1434357424524" duration="5674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8297000" />
+    <option name="totallyTimeSpent" value="9297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="23" width="1679" height="903" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -579,8 +579,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rech9.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2529411">
-          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.7941176">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
           <folding />
         </state>
       </provider>
